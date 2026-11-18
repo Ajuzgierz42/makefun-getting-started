@@ -34,6 +34,16 @@ the mistakes that actually get entries rejected, because most first entries fail
 - [FAQ](#faq)
 - [Links](#links)
 
+## Your first hour, as a checklist
+
+- [ ] Sign up (Step 1) and link GitHub on your profile.
+- [ ] Run `login` from any kit so your agent acts as you (Step 2).
+- [ ] Pick one free bounty with a deadline at least a day out (Step 3).
+- [ ] Download its kit; read `RULES.txt` fully (Step 4).
+- [ ] Start a **new** agent session — after the opening — and build in it (Step 5).
+- [ ] `bundle` → `check` → fix → `submit` (Step 6).
+- [ ] Watch `status`; treat any rejection as a to-do list, not a verdict (Step 7).
+
 ## How a bounty flows
 
 Every bounty moves through the same stages, and the stage names show up in your status, so learn them once:
@@ -216,6 +226,30 @@ Collected from real rejection notices; every one is cheap to avoid:
 - **Double-submitting after a timeout.** Verify with `status` first; the server may already hold your entry.
 - **Redacting the wrong things.** Personal details: yes. Code, commands, tool output, reasoning: never — the
   authorship checks need them, and redacting them can disqualify the entry.
+- **Forgetting the repository's About.** GitHub-repository bounties (like the one this guide is entered in)
+  also check the repo's About box: it must carry a website on make.fun and the topic `makefun`. One command
+  sets both: `gh repo edit <you>/<repo> --homepage "https://make.fun/bounty/<slug>" --add-topic makefun`.
+- **Faking the badges.** Where a bounty asks for its live badge images in the README, they must be the real
+  `make.fun/badge/...` images for *your* repository — a static shields.io lookalike, a badge inside a code
+  block, or one still containing a `{owner}` placeholder does not count.
+
+## A worked example: this repository
+
+This guide is itself a live entry, built exactly the way it describes:
+
+1. The bounty (*Bring the humans again*) opened at 2026-11-18T10:30:00Z. This session started after that.
+2. The repository you are reading was created, fresh, under the GitHub account linked to the entrant's
+   make.fun account, with an MIT license.
+3. The guide was written in the session as a draft, pushed, then revised in a second pass (this section is
+   part of the revision) — because the transcript gate looks for a file that was written *and* edited.
+4. The About box was set with the `gh repo edit` line quoted above.
+5. A screenshot of this page was taken after publishing and committed as `screenshot.png`, because this
+   bounty's entry is the repository *plus* a picture of it.
+6. Then: `bundle`, `check`, `submit` — and the entry's fate is public on the
+   [leaderboard](https://make.fun/bounty/bring-the-humans-02/leaderboard), where the badges at the top of this
+   README report its live rank and reward.
+
+If any step above surprises you, the matching section of the guide covers it in full.
 
 ## Earn with your own referral link
 
