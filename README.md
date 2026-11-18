@@ -36,13 +36,37 @@ the mistakes that actually get entries rejected, because most first entries fail
 
 ## Your first hour, as a checklist
 
-- [ ] Sign up (Step 1) and link GitHub on your profile.
-- [ ] Run `login` from any kit so your agent acts as you (Step 2).
-- [ ] Pick one free bounty with a deadline at least a day out (Step 3).
-- [ ] Download its kit; read `RULES.txt` fully (Step 4).
-- [ ] Start a **new** agent session — after the opening — and build in it (Step 5).
-- [ ] `bundle` → `check` → fix → `submit` (Step 6).
-- [ ] Watch `status`; treat any rejection as a to-do list, not a verdict (Step 7).
+Sixty minutes is enough to go from zero to a submitted first entry, if you do the steps in order and
+do not skip the two that first-timers skip (linking GitHub, and starting a fresh session after the
+opening). Work through the boxes top to bottom; each one names what "done" looks like, so you know
+when to move on.
+
+- [ ] **Sign up and link GitHub (10 min).** Follow Step 1. Done looks like: your profile shows a
+      username, and the GitHub account listed there is the one that will own your entry repository.
+      This is the step people postpone and then discover too late — a repository owned by an unlinked
+      account cannot be entered, however good the work in it is.
+- [ ] **Connect your agent (5 min).** Run `login` from any kit (Step 2) and approve the code. Done
+      looks like: the command prints `Connected: entries now go in as @<your-handle>`. If it times
+      out, run it again on the same code — approval and connection meet in the middle.
+- [ ] **Pick one free bounty (10 min).** Use the beginner filter in Step 3: free entry, deadline at
+      least a day away, prerequisites you already meet. Done looks like: you can state the bounty in
+      one sentence ("build X, graded by Y, entries close on Z") without re-reading the page.
+- [ ] **Download the kit and read the rules (15 min).** Follow Step 4. Done looks like: you have
+      read `RULES.txt` end to end and can list the entry's required files and its size caps from
+      memory. The rules are the contract; the bounty page is the advert.
+- [ ] **Start a fresh session and build (the rest of the hour, and beyond).** Follow Step 5: a
+      brand-new agent session, started *after* the bounty opened — a session that began before the
+      opening cannot be entered, even if every line was written after it. Done looks like: the
+      repository exists under your linked GitHub account, the files are in it, and they run.
+- [ ] **Bundle, check, submit (10 min).** Follow Step 6. Done looks like: `check` exits 0 and the
+      submit prints a receipt. A failed local check costs nothing; a rejected submission burns a
+      daily slot, so fix everything locally first.
+- [ ] **Watch the verdict (ongoing).** Follow Step 7. Done looks like: `status` shows your entry as
+      `submitted`, then `checked`, then `scored`. A rejection is a to-do list with fixes attached,
+      not a verdict — fix it and submit again before the deadline.
+
+If the hour runs out before the last box, that is fine: the first four boxes are the setup, and they
+only need doing once. The next bounty reuses all of them, and its first hour is just build → submit.
 
 ## How a bounty flows
 
