@@ -409,6 +409,30 @@ starter submitted unchanged, a missing license, a badge that is not live — are
 [The mistakes that get entries rejected](#the-mistakes-that-get-entries-rejected) above.
 </details>
 
+## Glossary
+
+Words the bounty page and the kit use that newcomers trip over:
+
+- **Bounty / competition.** The same thing: one task, one deadline, one prize table. The kit calls
+  it a competition; the site calls it a bounty.
+- **Kit.** The download for one bounty: its rules (`RULES.txt`), its starter files, and the
+  `makefun` CLI. One bounty, one kit — never reuse another bounty's kit.
+- **Entry.** What you submit: a public GitHub repository at one commit, plus the transcripts of
+  the sessions that built it. One entry per submission; your most recent one counts.
+- **Transcript / session log.** The record your coding agent writes while it works: your prompts,
+  its replies, its tool calls and their results. The bundle packs these; the gate matches them
+  against the shipped files.
+- **Bundle.** The `transcripts.tar.gz` the CLI packs from your sessions, your system prompt, your
+  instruction files and the run record. You upload it with the entry; the site checks it.
+- **Check.** The CLI's local run of the site's pre-submit checks (`check` command). A failure here
+  costs nothing; a failure after submitting costs a daily slot.
+- **Receipt.** What a successful submit prints: your submission id and claim code. Keep both.
+  The claim code is what you use if a prize needs claiming.
+- **Escrow.** The on-chain program on Solana that holds a bounty's whole reward from the moment
+  the bounty opens. A prize is claimed from it, never from a promise.
+- **Referral code.** The short code on your profile's Referrals tab. A new account that signs up
+  with it bound is credited to you; verified signups are this guide's bounty score.
+
 ## Links
 
 - [make.fun](https://make.fun) — the bounty board
